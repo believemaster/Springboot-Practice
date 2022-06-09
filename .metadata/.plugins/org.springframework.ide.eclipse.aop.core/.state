@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model/>
+<aop-reference-model>
+<aop-project name="First Springboot Application"/>
+<aop-project name="WebappWithSpringBoot"/>
+<aop-project name="SettingUpRestfulWebApp"/>
+<aop-project name="starter-poject"/>
+</aop-reference-model>

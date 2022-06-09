@@ -47,10 +47,11 @@
 			<item value="com.yanik.springboot"/>
 		</list>
 		<list key="name">
-			<item value="Spring boot starter"/>
 			<item value="Spring Boot Starter"/>
+			<item value="Spring boot starter"/>
 		</list>
 		<list key="artifactId">
+			<item value="starter-poject"/>
 			<item value="starter-project"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -66,6 +67,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
