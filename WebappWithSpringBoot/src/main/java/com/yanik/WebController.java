@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WebController {
 	@RequestMapping("welcome")
 	public String welcome() {
-		return "welcome.html";
+		return "welcome";
 	}
 	
 }
