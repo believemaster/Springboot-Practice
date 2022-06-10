@@ -25,40 +25,20 @@ public class PostsService {
 		return list;
 	}
 	
-	/*
 	public Post getPost(int id) {
-		for(Post post: posts) {
-			if(post.getPostId() == id) {
-				return post;
-			}
-		}
-		
-		return null;
+		return repo.findById(id).get();
 	}
 
 	public void addPost(Post listElement) {
-		posts.add(listElement);
+		repo.save(listElement);
 	}
 
-	public void updatePost(Post post, int id) {
-		for(int i=0; i<posts.size(); i++) {
-			Post tempPost = posts.get(i);
-			if(tempPost.getPostId() == id) {
-				posts.set(i, post);
-				return;
-			}
-		}
+	public void updatePost(Post post) {
+		repo.save(post);
 	}
 
 	public void deletePost(int id) {
-		for(int i=0; i<posts.size(); i++) {
-			Post tempPost = posts.get(i);
-			if(tempPost.getPostId() == id) {
-				posts.remove(i);
-				return;
-			}
-		}
+		repo.deleteById(id);
 	}
-*/
 	
 }

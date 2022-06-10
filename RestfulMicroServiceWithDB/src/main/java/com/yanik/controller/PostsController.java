@@ -24,25 +24,23 @@ public class PostsController {
 		return service.getPosts();
 	}
 		
-	/*
 	@RequestMapping("/posts/{id}")
 	public Post getPost(@PathVariable int id) {
-		return new PostsService().getPost(id);
+		return service.getPost(id);
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, value="/posts")
 	public void addPost(@RequestBody Post listElement) {
-		new PostsService().addPost(listElement);
+		service.addPost(listElement);
 	}
 	
 	@RequestMapping(method = RequestMethod.PUT, value="/posts/{id}")
-	public void updatePost(@RequestBody Post post,@PathVariable int id) {
-		new PostsService().updatePost(post, id);
+	public void updatePost(@RequestBody Post post) {
+		service.updatePost(post);
 	}
 	
 	@RequestMapping(method = RequestMethod.DELETE, value="/posts/{id}")
 	public void deletePost(@PathVariable int id) {
-		new PostsService().deletePost(id);
+		service.deletePost(id);
 	}
-	*/
 }
