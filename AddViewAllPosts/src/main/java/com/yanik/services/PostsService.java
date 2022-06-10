@@ -33,5 +33,10 @@ public class PostsService {
 		
 		return null;
 	}
+
+	public void addPost(Post listElement) {
+		posts.add(listElement);
+	}
+
 	
 }
