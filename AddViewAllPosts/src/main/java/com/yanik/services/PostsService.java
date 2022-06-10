@@ -48,5 +48,15 @@ public class PostsService {
 		}
 	}
 
+	public void deletePost(int id) {
+		for(int i=0; i<posts.size(); i++) {
+			Post tempPost = posts.get(i);
+			if(tempPost.getPostId() == id) {
+				posts.remove(i);
+				return;
+			}
+		}
+	}
+
 	
 }
