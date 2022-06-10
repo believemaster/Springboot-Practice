@@ -10,15 +10,6 @@ import com.yanik.entity.Post;
 
 @Service
 public class PostsService {
-	
-	
-	static List<Post> posts = new ArrayList<>(
-			Arrays.asList(
-					new Post(1, "Datatype", "Sample Txt"),
-					new Post(2, "Classes", "Sample Txt"),
-					new Post(3, "Object", "Sample Txt"),
-					new Post(4, "OOPS concepts", "Sample Txt")
-			));
 
 	public List<Post> getPosts() {
 		return posts;
