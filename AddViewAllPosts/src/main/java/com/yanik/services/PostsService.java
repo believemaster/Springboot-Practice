@@ -1,6 +1,7 @@
 package com.yanik.services;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -11,15 +12,14 @@ import com.yanik.entity.Post;
 public class PostsService {
 	
 	
-	List<Post> posts = new ArrayList<>();
+	static List<Post> posts = new ArrayList<>(
+			Arrays.asList(
+					new Post(1, "Datatype", "Sample Txt"),
+					new Post(2, "Classes", "Sample Txt"),
+					new Post(3, "Object", "Sample Txt"),
+					new Post(4, "OOPS concepts", "Sample Txt")
+			));
 
-	public PostsService() {
-		posts.add(new Post(1, "Datatype", "Sample Txt"));
-		posts.add(new Post(2, "Classes", "Sample Txt"));
-		posts.add(new Post(3, "Object", "Sample Txt"));
-		posts.add(new Post(4, "OOPS concepts", "Sample Txt"));
-	}
-	
 	public List<Post> getPosts() {
 		return posts;
 	}
