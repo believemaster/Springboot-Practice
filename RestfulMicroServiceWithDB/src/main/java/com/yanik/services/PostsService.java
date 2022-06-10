@@ -4,17 +4,28 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.yanik.entity.Post;
+import com.yanik.repository.PostRepository;
 
 @Service
 public class PostsService {
+	
+	@Autowired
+	private PostRepository repo;
 
 	public List<Post> getPosts() {
-		return posts;
+		List<Post> list = new ArrayList<Post>();
+		
+		for(Post post: repo.findAll()) {
+			list.add(post);
+		}
+		return list;
 	}
 	
+	/*
 	public Post getPost(int id) {
 		for(Post post: posts) {
 			if(post.getPostId() == id) {
@@ -48,6 +59,6 @@ public class PostsService {
 			}
 		}
 	}
-
+*/
 	
 }

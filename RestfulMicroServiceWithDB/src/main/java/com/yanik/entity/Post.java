@@ -19,6 +19,8 @@ public class Post {
 	@Column(name="body")
 	String body;
 	
+	public Post() {}
+	
 	public Post(int postId, String title, String body) {
 		this.postId = postId;
 		this.title = title;
