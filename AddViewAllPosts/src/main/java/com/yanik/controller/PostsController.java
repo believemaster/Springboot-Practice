@@ -3,6 +3,7 @@ package com.yanik.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,5 +18,9 @@ public class PostsController {
 	public List<Post> getPosts() {
 		return new PostsService().getPosts();
 	}
-	
+		
+	@RequestMapping("/posts/{id}")
+	public Post getPost(@PathVariable int id) {
+		return new PostsService().getPost(id);
+	}
 }
