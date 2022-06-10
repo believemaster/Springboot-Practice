@@ -38,5 +38,15 @@ public class PostsService {
 		posts.add(listElement);
 	}
 
+	public void updatePost(Post post, int id) {
+		for(int i=0; i<posts.size(); i++) {
+			Post tempPost = posts.get(i);
+			if(tempPost.getPostId() == id) {
+				posts.set(i, post);
+				return;
+			}
+		}
+	}
+
 	
 }
