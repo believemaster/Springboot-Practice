@@ -57,10 +57,12 @@
 		<item value="org.springframework.ide.eclipse.boot.dash.feature:4.14.1.202204250734"/>
 		<item value="org.springframework.ide.eclipse.data.feature:3.9.22.202204280911-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.feature:3.9.22.202204280911-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.integration.feature.source:3.9.22.202204280911-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.integration.feature:3.9.22.202204280911-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.maven.feature:3.9.22.202204280911-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.mylyn.feature:3.9.22.202204280911-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.security.feature:3.9.22.202204280911-RELEASE"/>
+		<item value="org.springframework.ide.eclipse.webflow.feature.source:3.9.22.202204280911-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.webflow.feature:3.9.22.202204280911-RELEASE"/>
 		<item value="org.springframework.ide.eclipse.xml.namespaces.feature:4.14.1.202204250734"/>
 	</list>
